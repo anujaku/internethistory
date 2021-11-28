@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Internet Pioneers</title>
+
+
+    <style>
+        nav {
+            height: 70px;
+            font-size: 20px;
+        }
+        body {
+            padding-top: 90px;
+            padding-left: 10px;
+            padding-right: 14px;
+            margin: fill;
+            image-resolution: from-image;
+        }
+        h1 {
+            font-size: 200%;
+            color: black;
+            text-align: center;
+            /*text-decoration-style: solid;*/
+            margin-bottom: 0;
+            max-width: 100%;
+        }
+        .body-content {
+            min-height: available;
+            display: contents;
+            width: border-box;
+            padding: inherit;
+            margin-top: auto;
+        }
+        .page-section {
+            display: flex;
+            flex-direction: row;
+        }
+
+        @media (max-width: 600px) {
+            .page-section {
+                flex-direction: column;
+            }
+        }
+        .grid-left {
+            padding: 0;
+            text-align: left;
+            color: black;
+            flex: 70% !important;
+        }
+        .grid-right {
+            text-align: center;
+            flex: 30%;
+        }
+        .grid-img {
+            display: inline-block;
+            border: 1px solid black;
+            max-height: 300px;
+            width: auto;
+            max-width: 450px;
+            alignment: right;
+        }
+        .grid-container-bw {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: repeat(1, 40vw)
+        }
+        .grid-container-3 {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: repeat(3, 40vw)
+        }
+        @media (max-width: 800px) {
+            .page-section {
+                flex-direction: column;
+            }
+        }
+        .divBottomFontStyle {
+            font-size: large;
+            color: darkgreen;
+        }
+        .grid-left {
+            padding: 0;
+            text-align: left;
+            color: black;
+            flex: 70% !important;
+        }
+        .footer {
+            position: relative;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            color: black;
+            text-align: center;
+        }
+
+
+        .grid-right {
+            text-align: center;
+            flex: 30%;
+        }
+        .navbar a:hover{
+
+            background-color: gray;
+            color: black;
+
+        }
+
+
+        .grid-img {
+            display: inline-block;
+            max-height: 250px;
+            width: auto;
+            max-width: 450px;
+            alignment: right;
+        }
+
+        .grid-container-bw {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: repeat(1, 40vw)
+        }
+
+        .grid-container-3 {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: repeat(3, 40vw)
+        }
+
+        @media screen and (max-width: 600px) {
+            ul.navbar li.right,
+            ul.navbar li {float: none;}
+            /*div.hero-image*/
+            .navbar a:hover{
+
+                background-color: gray;
+                color: black;
+
+            }
+            .menu {
+
+
+                background-color:rosybrown;
+                right: 0;
+                left: 0;
+                text-align: center;
+
+            }
+
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .navbar {
+            display: flex;
+            background-color: black;
+        }
+
+        @media (max-width: 600px) {
+            .row, .navbar {
+                flex-direction: column;
+            }
+            .name{
+                margin-left: 100px;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+-->
+<nav id="navbar-example2" class="navbar navbar-expand-lg navbar-dark bg-dark  fixed-top">
+    <div class="container-fluid">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div  class=" menu collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="team.html">Team</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        History of the Internet
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="earlyinnovation.html">Early Innovation</a></li>
+                        <li><a class="dropdown-item" href="internetwork.html">How Does Internet Work</a></li>
+                        <li><a class="dropdown-item" href="pioneers.html">Internet Pioneers</a></li>
+                        <li><a class="dropdown-item" href="timeline.html">Internet History Timeline</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Python Introduction
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="earlyinnovation.html">Pylint</a></li>
+                        <li><a class="dropdown-item" href="internetwork.html">AAA Testing with Python</a></li>
+                        <li><a class="dropdown-item" href="pioneers.html">Principles of Object-Oriented Programming</a></li>
+                        <li><a class="dropdown-item" href="timeline.html">Design Patterns</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
+<div class="body-content">
+    <h1 style="text-align: center">Internet Pioneers</h1>
+    <p><br/></p>
+
+    <div class="grid-container-4">
+        <div class="page-section">
+            <div class="grid-left">
+                <h4 class="adjust-margin"><strong>J.C.R. Licklider</strong></h4>
+                <p>In 1962, Dr. Joseph Carl Robnett Licklider formulated the earliest ideas of global networking
+                    discussing thenan “Intergalactic Computer Network.” He envisioned a globally interconnected set
+                    of computers through which everyone could quickly access data and programs from any site.
+                    In 1963, Dr. J.C.R. Licklider’s persuasive and detailed description of the challenges in
+                    establishing a time-sharing network of computers that ultimately led to the creation of the
+                    ARPAnet.
+                    His 1968, he illustrated his vision of network applications and predicted the use of computer
+                    networks for communications through a detailed paper called “The Computer as a Communication
+                    Device”. Until then, computers had generally been thought of as mathematical devices for
+                    speeding up computations.
+                </p>
+            </div>
+            <div class="grid-right">
+                <img src="images/Licklider.jpeg" alt="J.C.R. Licklider" class="grid-img">
+            </div>
+        </div>
+        <div class="page-section">
+            <div class="grid-left">
+                <h4 class="adjust-margin"><strong>Bob Kahn </strong></h4>
+                <p>In October 1972, Kahn organized a large and very successful demonstration of the ARPANET
+                    at the International Computer Communication Conference (ICCC). This was the first public
+                    demonstration of this new network technology to the public. It was also in 1972 that the
+                    application, electronic mail, was introduced. In March Ray Tomlinson at BBN wrote the basic
+                    email message send and read software, motivated by the need of the ARPANET developers for an
+                    easy coordination mechanism. In July, Roberts expanded its utility by writing the first email
+                    utility program to list, selectively read, file, forward, and respond to messages. From there
+                    email took off as the largest network application for over a decade. This was a harbinger of
+                    the kind of activity we see on the World Wide Web today, namely, the enormous growth of all
+                    kinds of “people-to-people” traffic.</p>
+            </div>
+            <div class="grid-right">
+                <img src="images/bobKahn.jpeg" alt="Facebook logo" class="grid-img">
+            </div>
+
+        </div>
+        <div class="page-section">
+            <div class="grid-left" style="text-align: left">
+                <p>In the spring of 1973, Kahn approached Cerf with the idea of developing a system for
+                    interconnecting networks—what would eventually be called an “internet.” Kahn felt that his
+                    own knowledge of the problem of connecting dissimilar networks, combined with Cerf’s expertise
+                    in writing host software, would create a strong partnership. In addition, Kahn and Cerf
+                    demonstrated farsighted leadership by inviting networking experts from around the world to
+                    weigh in on the Internet design at a seminar in June 1973. This move not only led to more
+                    robust protocols, but also laid the groundwork for the global spread of the Internet.</p>
+            </div>
+        </div>
+        <div class="page-section">
+            <div class="grid-left">
+                <h4 class="adjust-margin"> <strong>Lawrence Robert</strong></h4>
+                <p>Dr. Robert designed and managed the first packet network, which was the ARPANET. In 1967,
+                    Dr. Roberts started the task of designing, funding, and managing the radically new
+                    communications network concept of packet switching.
+                    In April 1967,Roberts presented the technical specifications for the network in an ARPAnet
+                    meeting. However, after the meeting, computer scientist Wesley Clark suggested Robert that
+                    the actual networking should be handled by smaller computers called interface message processors
+                    (IMPs) rather than the large mainframes that would be the nodes of ARPANET. Roberts modified
+                    the ARPANET plan to incorporate Clark’s suggestion. On October 29, 1969, American computer
+                    scientist Leonard Kleinrock and his student Charley Kline sent the first message over ARPANET
+                    from an IMP and computer at the University of California, Los Angeles, to an IMP and computer
+                    at Stanford Research Institute in Menlo Park, California.</p>
+            </div>
+            <div class="grid-right">
+                <img src="images/lawrenceRoberts.jpeg" alt="Napster Logo" class="grid-img">
+            </div>
+        </div>
+        <div class="page-section">
+            <div class="grid-left" style="text-align: left">
+                <p>Computers were added quickly to the ARPANET during the following years, and work proceeded
+                    on completing a functionally complete Host-to-Host protocol and other network software.
+                    In December 1970 the Network Working Group working under S. Crocker finished the initial
+                    ARPANET Host-to-Host protocol, called the Network Control Protocol (NCP). As the ARPANET sites
+                    completed implementing NCP during the period 1971-1972, the network users finally could begin
+                    to develop applications.
+                    In 1971 Lawrence Robert wrote one of the first e-mail programs, RD, which for the first
+                    time allowed users to save, delete, and organize their messages.</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="page-section">
+        <div class="grid-left">
+            <h4 class="adjust-margin"> <strong>Vint Cerf </strong></h4>
+            <p>Within a few years of the creation of the ARPANET, other computers networks were deployed.
+                They were all independent self-contained networks. Around this time Bob was looking for a
+                solution to connect and communicate computers at different places and on different networks.
+                While looking for the solution they realized that there needed to be a "gateway" computer between
+                each network to route packets. The gateway computers would not care about the various complexities
+                of each network. They would simply be in charge of passing packets back and forth. But all of
+                the networks transmitted packets in different ways, using their own protocols. So a new standard
+                was needed to link all the networks and allow inter-network communication.
+                Cerf and Kahn began working out a plan in 1973.</p>
+        </div>
+        <div class="grid-right">
+            <img src="images/vintCerf.jpeg" alt="mySpace logo" class="grid-img">
+        </div>
+    </div>
+    <div class="page-section">
+        <div class="grid-left" style="text-align: left">
+            <p>In September, they presented a paper outlining
+                their ideas to the International Networking Group. In May 1974, they complete their paper,
+                "A Protocol for Packet Network Intercommunication." They described a new protocol which is known
+                as the transmission-control protocol (TCP). The main idea of this protocol was to enclose packets
+                in "datagrams" that would act as the envelopes containing letters. The content and format of the
+                letter is not important for its delivery. The information on the envelope is standardized to
+                facilitate delivery. Gateway computers would simply read only the delivery information contained
+                in the datagrams and deliver the contents to host computers. Only the host computers would actually
+                "open" the envelope and read the actual contents of the packet. TCP allowed networks to be joined
+                into a network of networks, or what we now call the Internet.
+                Cerf continued to refine TCP. In 1978, Cerf and several of his colleagues made a major
+                refinement and they split TCP into two parts. They took the part of TCP that is responsible
+                for routing packages and formed a separate protocol called the Internet Protocol (IP).TCP would
+                remain responsible for dividing messages into datagrams, reassembling messages, detecting errors,
+                putting packets in the right order, and resending lost packets. The new protocol was called TCP/IP.
+                It went on to become the standard for all Internet communication.</p>
+        </div>
+    </div>
+
+    <div class="page-section">
+        <div class="grid-left">
+            <h4 class="adjust-margin"> <strong>Tim Berners-Lee </strong></h4>
+            <p>Tim Berners-Lee invented the World Wide Web in 1989, but the use of the WWW became widespread
+                in the mid 1990’s. Lee envisioned a global information space where information stored on computers
+                everywhere was linked and available to anyone anywhere.
+                In 1989, Lee submitted a proposal at CERN to develop an information system that would create a web
+                of information. In 1990, he wrote the Hypertext Transfer Protocol
+                (HTTP)—the language for computers to use to communicate hypertext documents over the Internet and
+                designed a scheme to give documents addresses on the Internet which is known as Universal Resource
+                Identifier (URL).
+            </p>
+        </div>
+        <div class="grid-right">
+            <img src="images/timBernersLee.jpeg" alt="mySpace logo" class="grid-img">
+        </div>
+    </div>
+</div>
+
+<div class="footer" >
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+        <div class="row">
+            <div class="col-12 col-md">
+
+                <small class="d-block mb-3 text-muted">&copy; 2021</small>
+
+                <a style="text-decoration: none" href="https://validator.w3.org/">W3C Validator</a>
+
+            </div>
+            <div class=" name col-6 col-md">
+                <h5>Suhani Javia</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a style="text-decoration: none" class="text-muted" href="#">Email: sj48@njit.edu</a></li>
+                    <li><a  class="text-muted" href="https://github.com/jastina10/internethistoryproject">GitHub</a></li>
+                </ul>
+            </div>
+            <div class=" name col-6 col-md">
+                <h5>Anuja Kulkarni</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a style="text-decoration: none" class="text-muted" href="#">Email: avk5@njit.edu</a></li>
+                    <li><a class="text-muted" href="https://github.com/anujaku/internethistoryproject">Github</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+</body>
+</html>

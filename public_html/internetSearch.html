@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Internet Search</title>
+
+
+  <style>
+    nav {
+      height: 70px;
+      font-size: 20px;
+    }
+    body {
+      padding-top: 90px;
+      image-resolution: from-image;
+    }
+    h1 {
+      font-family: "Arial Rounded MT Bold",serif;
+      font-size: 200%;
+      color: black;
+      text-align: center;
+      /*text-decoration-style: solid;*/
+      margin-bottom: 0;
+      max-width: 100%;
+    }
+    .navbar a:hover{
+
+      background-color: gray;
+      color: black;
+
+    }
+
+    .footer {
+      position: relative;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      color: black;
+      text-align: center;
+    }
+
+
+    @media (max-width: 600px) {
+
+      @media (max-width: 800px) {
+
+      }
+
+      @media screen and (max-width: 600px) {
+        /*div.hero-image*/
+      }
+
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .navbar {
+        display: flex;
+        background-color: #333;
+      }
+
+      @media (max-width: 600px) {
+        .row, .navbar {
+          flex-direction: column;
+        }
+        .navbar a:hover{
+
+          background-color: gray;
+          color: black;
+
+        }
+        .menu {
+
+
+          background-color:rosybrown;
+          right: 0;
+          left: 0;
+
+          padding-left: 20px;
+
+        }
+        .name{
+          margin-left: 100px;
+          margin-top: 20px;
+        }
+
+      }
+    }
+  </style>
+</head>
+<body>
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+-->
+<nav id="navbar-example2" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container-fluid">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div  class="menu collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Team</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            History of the Internet
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="earlyinnovation.html">Early Innovation</a></li>
+            <li><a class="dropdown-item" href="internetwork.html">How Does Internet Work</a></li>
+            <li><a class="dropdown-item" href="internetSearch.html">Internet Pioneers</a></li>
+            <li><a class="dropdown-item" href="timeline.html">Internet History Timeline</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Python Introduction
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="earlyinnovation.html">Pylint</a></li>
+            <li><a class="dropdown-item" href="internetwork.html">AAA Testing with Python</a></li>
+            <li><a class="dropdown-item" href="pioneers.html">Principles of Object-Oriented Programming</a></li>
+            <li><a class="dropdown-item" href="timeline.html">Design Patterns</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="container">
+  <div class="p-10 p-md-5 mb-10 text-light bg-dark">
+    <div class="col-md-10 px-0">
+      <h1 class="display-100 fst-italic text-light align-center">The True Story of the Internet- Internet Search</h1>
+      <p class="lead my-4">How sticking to their Roots Paid off.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-8">
+      <h3 class="pb-4 mb-4 fst-italic border-bottom">
+        <em></em>
+      </h3>
+
+      <article class="blog-post">
+        <h2 class="blog-post-title">Google Stepped In</h2>
+        <p class="blog-post-meta">February 20, 2021 <a href="#"></a></p>
+
+        <p>Imagine a world without <strong>Google</strong>, seriously a world without Google where you couldn't
+          do detailed
+          search on your blind date for tomorrow night. Few years ago there was no Google and before that
+          there was no way to search. Navigating the web so easily was not always the case. Back in the early
+          stages of the world wide web, search engines were not a thing. If you wanted to find some
+          information
+          you would need to search the internet for hours and hope you got lucky with whatever rabbit hole
+          you went into.</p>
+
+        <p><strong>Jerry Yang</strong> and <strong>David Filo</strong> who were graduate students at Stanford
+          University, in an attempt to win a
+          fantasy basketball league started searching the internet for up to date statistics in order to make
+          better informed decisions. They lost upon the issue where they had no easy way to navigate or search
+          for the information they needed which greatly lengthened their research process. This is when they
+          developed a guide to help new web users navigate the internet, the original idea was a page that
+          had various topics and web pages sorted into each of them. The new name of this company the two
+          made was <strong>Yahoo</strong>.</p>
+
+        <p><img src="images/the.jpeg" alt="Internet search"
+                width="251" height="169"></p>
+        <p>Excite started another search startup around the time which had a more technical approach on search
+          than yahoo. Instead of having humans sort pages into various topics, their search would look for
+          relevance within the pages it searched. Yahoo and Excite battled over technical success by being on
+          the forefront of each other's additions, for example releasing emails and having the other
+          incorporate email as well. The search engine companies got caught up in the competition that
+          they lost site of their foundational products which was searched.</p>
+
+        <hr>
+        <p>While the battle between Excite and Yahoo ran on, a new search company began its inception, the name
+          of this company was <strong>Google</strong>. Google used a technological approach like Excite
+          however, they also
+          incorporated determining relevance by views. By taking into account relevance, the search engine was
+          able to become more effective than the other search engines. Google pitched their technology to
+          search engine companies all over the valley which none gave them an offer. They had failed to sell
+          their technology and the future looked dim for the small startup, until they met with an investor
+          named Bechtolsheim who invested one hundred thousand dollars in them and this was followed by twelve
+          million from other venture capital investors in the valley.</p>
+
+        <p><img src="images/googleSearch.jpeg" alt="Internet search" width="600" height="216">
+        </p>
+
+        <blockquote>
+          <p>Google had essentially solved the single hardest problem on the internet but did not have the
+            ability to make money at the time. They also refused to take money from advertisements like
+            their competitors Yahoo and Excite. Google then learned about Bill Gross idea, who saw search
+            engine data collection as the world’s most powerful market research tool. Google had essentially
+            taken Gross idea which he incorporated into his site overture.com as the solution to their
+            monetary business problem. Bill Gross eventually sued Google for similarities on his idea which
+            they had made a settlement out of court.</p>
+
+        </blockquote>
+        <p>On August, 19th 2004, Google went public and listed its shares on the New York Stock Exchange.
+          Wall Street had been angered by Google’s IPO process since they decided to carry out their offering
+          in an unconventional way which received much criticism. In the end, the Google IPO was an ultimate
+          success and now we know it as the tech giant it is today.</p>
+
+        <hr>
+        <img src="images/google.jpeg" alt="Internet search" width="500" height="296">
+      </article>
+    </div>
+
+
+    <div class="col-md-4">
+      <div class="p-4 mb-3 bg-light rounded">
+        <img src="images/googleSeachAppliance.jpeg" alt="Image about Internet search" width="400" height="400">
+        <p class="mb-0"></p>
+      </div>
+    </div>
+
+  </div><!-- /.row -->
+
+</main><!-- /.container -->
+
+<div class="footer" >
+  <footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row">
+      <div class="col-12 col-md">
+
+        <small class="d-block mb-3 text-muted">&copy; 2021</small>
+
+        <a style="text-decoration: none" href="https://validator.w3.org/">W3C Validator</a>
+
+      </div>
+      <div class=" name col-6 col-md">
+        <h5>Suhani Javia</h5>
+        <ul class="list-unstyled text-small">
+          <li><a style="text-decoration: none" class="text-muted" href="#">Email: sj48@njit.edu</a></li>
+          <li><a  class="text-muted" href="https://github.com/jastina10/internethistoryproject">GitHub</a></li>
+        </ul>
+      </div>
+      <div class="name col-6 col-md">
+        <h5>Anuja Kulkarni</h5>
+        <ul class="list-unstyled text-small">
+          <li><a style="text-decoration: none" class="text-muted" href="#">Email: avk5@njit.edu</a></li>
+          <li><a class="text-muted" href="https://github.com/anujaku/internethistoryproject">Github</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+</body>
+</html>

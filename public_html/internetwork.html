@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>How Does The Internet Work</title>
+
+
+  <style>
+    img{
+      height: 250px;
+      float: left;
+    }
+
+    nav{
+      height: 70px;
+      font-size: 20px;
+    }
+
+    #text{
+      background-color: #c5ebf5;
+
+      margin-top: 90px;
+      text-align: center;
+      height: 150px;
+      padding-top: 40px;
+
+    }
+
+    [class*="col-"] {
+      float: left;
+      padding: 15px;
+      width: 100%;
+    }
+    h3{
+      background-color:#666;
+      height: 70px;
+      padding-top: 20px;
+      color: white;
+    }
+    .footer {
+      position: relative;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      color: black;
+      text-align: center;
+    }
+    .navbar a:hover{
+      background-color: gray;
+      color: black;
+    }
+    .aside {
+      padding: 15px;
+      box-shadow: 5px 10px 8px #888888;
+      background-color: #f8f8f8;
+      text-align: center;
+      font-size: 14px;
+    }
+    .responsive {
+      margin-left: 25%;
+      height: auto;
+    }
+
+    @media only screen and (max-width: 620px) {
+      /* For mobile phones: */
+      .menu, .example1, .responsive {
+        width: 100%;
+        max-width: 400px;
+        margin: 0;
+      }
+      .navbar a:hover{
+
+        background-color: gray;
+        color: black;
+
+      }
+      .menu {
+        background-color:rosybrown;
+        right: 0;
+        left: 0;
+        text-align: center;
+      }
+
+      .example1{
+        margin-left: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+-->
+<nav id="navbar-example2" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div  class="menu collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="team.html">Team</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            History of the Internet
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="earlyinnovation.html">Early Innovation</a></li>
+            <li><a class="dropdown-item" href="internetwork.html">How Does Internet Work</a></li>
+            <li><a class="dropdown-item" href="pioneers.html">Internet Pioneers</a></li>
+            <li><a class="dropdown-item" href="timeline.html">Internet History Timeline</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Python Introduction
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="earlyinnovation.html">Pylint</a></li>
+            <li><a class="dropdown-item" href="internetwork.html">AAA Testing with Python</a></li>
+            <li><a class="dropdown-item" href="pioneers.html">Principles of Object-Oriented Programming</a></li>
+            <li><a class="dropdown-item" href="timeline.html">Design Patterns</a></li>
+          </ul>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+<div id ="text" style="text-align:center; ">
+  <h1 class="c1">How does the Internet work?</h1>
+  <p class="c1" style="padding-bottom: 2% ; font-size: 20px; ">
+  </p>
+  <br>
+
+</div>
+<img src="images/work.png" alt="Nature" class="responsive" width="800" height="600">
+<div class="example1">
+  <div class="col-3 col-s-12">
+    <div class="aside">
+      <h2>Step One: Typing the URL into the Browser</h2>
+      <p>You open up your computer’s (or phone’s) browser and type in rookiemag.com into the address bar. Rookiemag.com is the URL (uniform resource locator) that tells your browser what website you’d like to view.</p>
+
+      <br><h2>Step Two: Finding the Server’s Address (DNS Lookup)</h2>
+      <p>Your computer can use the URL you’ve entered to look up the associated server’s IP address in a process called DNS (domain name system) lookup, just like you’d use a name to search for a phone number in your contact list. You might be wondering about the differences among the different URL endings, like .org, .com, and .net. Because there are so many URLs and IP addresses to search, DNS lookup uses those endings as its first round of elimination in its search. In our example, DNS lookup starts looking for the IP address for rookiemag.com in a directory of all .com IP addresses. Eventually, the lookup for rookiemag.com will return the IP address of Rookie’s server. If you’re curious to learn more about DNS lookup, here’s a great resource on it, in cartoon form.</p>
+      <h2>Step Three: Establishing a TCP Connection</h2>
+      <p>Computers are respectful and follow protocol-based communication. So, a computer starts a conversation with another computer by sending a message that’s the equivalent of, “Is now a good time to talk?” The other computer will respond with a message that’s the equivalent of “Sure!”, if it’s available for communication. And the first computer replies with a message that means, “Cool, just wanted to check first.” If the first computer never gets a reply back saying it is OK to talk, it won’t continue to send messages.</p>
+
+      <h2>Step Four: Preparing Messages</h2>
+      <p>Now that there’s a connection from your computer to Rookie’s server, the two computers can talk to each other. Servers use a way of talking called HTTP (hypertext transfer protocol). Just like you’d start a letter to Beyoncé with “Dear Beyoncé,” HTTP requires that computers start messages with a greeting called a header. There are a few different kinds of headers, which your computer knows to use based on what you’ve asked your computer to do. When you type in Rookie’s URL and hit enter, the message your computer sends through the network connection to Rookie’s server uses a header specifically for requesting information, called a GET header. If you’re posting a comment, the message your computer sends a message to to Rookie’s server with a POST header, which is specifically for sending information to a server.</p>
+
+      <h2>Step Five: Journey of the Messages</h2>
+      <p>And now, your computer’s message must go on a journey to get to Rookie’s router! In our example, we’re sending a message from your computer to Rookie’s server. Just like traveling on a plane, sometimes that message can be transferred fairly directly, or sometimes there are stops (like layovers) along the way. These “stops” can just be standard network points that are part of the path, or interruptions that can be caused by a number of different things. For example, a message might have to pause or re-route when a network is congested, just like cars might have to in a traffic jam. For the appropriate message to go from your computer to Rookie’s router, we wrap the message in a TCP (remember TCP from Step Three?) packet. The TCP packet acts like the envelope of a letter, with information on where the message is going, as well as who sent it. The packet is essentially just a unit of information that is readable by the server.</p>
+
+      <h2>Step Six: Response From the Server</h2>
+      <p>Once your message arrives at Rookie’s server, Rookie will respond (how kind!). So long as the message was written with an HTTP header, Rookie’s server will know the proper automatic response. It’s sort of like how you know to say, “Who’s there?” when someone says, “Knock knock.” The standard response is a 200 OK message, which is basically a status message from the server, saying whether or not the request went through. With a 200 OK message, we’re good to go ahead and render the webpage. You might have come across a 404 Document Not Found page before. A 404 response means that the website you asked for doesn’t exist on the server. These are just a couple out of many different standard responses a website may give.</p>
+
+      <h2>Step Seven: Rendering the Webpage</h2>
+      <p>The rest of the information in the message contains the website data. The text, images, and formatting information is all part of the website data, and this is written in the programming languages HTML and CSS. HTML and CSS act like LEGO instructions, which tell how all of the information for the website should fit together. For example, the text "<title>Rookie</title>" tells the browser to put “Rookie” in the title area of the browser. Once the web browser has fully loaded all of the content for rookiemag.com, you can happily browse through the beautiful writing and artwork on the site!</p>
+
+    </div>
+  </div>
+</div>
+
+<div class="footer" >
+  <footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row">
+      <div class="col-12 col-md">
+
+        <small class="d-block mb-3 text-muted">&copy; 2021</small>
+
+        <a style="text-decoration: none" href="https://validator.w3.org/">W3C Validator</a>
+
+      </div>
+      <div class=" name col-6 col-md">
+        <h5>Suhani Javia</h5>
+        <ul class="list-unstyled text-small">
+          <li><a style="text-decoration: none" class="text-muted" href="#">Email: sj48@njit.edu</a></li>
+          <li><a  class="text-muted" href="https://github.com/jastina10/internethistoryproject">GitHub</a></li>
+        </ul>
+      </div>
+      <div class="name col-6 col-md">
+        <h5>Anuja Kulkarni</h5>
+        <ul class="list-unstyled text-small">
+          <li><a style="text-decoration: none" class="text-muted" href="#">Email: avk5@njit.edu</a></li>
+          <li><a class="text-muted" href="https://github.com/anujaku/internethistoryproject">Github</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
