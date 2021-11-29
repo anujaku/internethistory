@@ -42,7 +42,6 @@
             display: flex;
             flex-direction: row;
         }
-
         .div1{
             background-color: #333333;
             height: 60px;
@@ -62,6 +61,28 @@
             text-align: left;
             color: black;
             flex: 70% !important;
+        }
+        .grid-right {
+            text-align: center;
+            flex: 30%;
+        }
+        .grid-img {
+            display: inline-block;
+            border: 1px solid black;
+            max-height: 450px;
+            width: auto;
+            max-width: 450px;
+            alignment: right;
+        }
+        .grid-container-bw {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: repeat(1, 40vw)
+        }
+        .grid-container-3 {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: repeat(3, 40vw)
         }
         @media (max-width: 800px) {
             .page-section {
@@ -87,11 +108,23 @@
             text-align: center;
         }
 
+        .grid-right {
+            text-align: center;
+            flex: 30%;
+        }
         .navbar a:hover{
 
             background-color: gray;
             color: black;
 
+        }
+
+        .grid-img {
+            display: inline-block;
+            max-height: 300px;
+            width: auto;
+            max-width: 600px;
+            alignment: right;
         }
 
         .grid-container-bw {
@@ -122,7 +155,6 @@
                 left: 0;
                 text-align: center;
             }
-
         }
 
         .row {
@@ -190,10 +222,10 @@
                         Python Introduction
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="earlyinnovation.html">Pylint</a></li>
-                        <li><a class="dropdown-item" href="internetwork.html">AAA Testing with Python</a></li>
-                        <li><a class="dropdown-item" href="pioneers.html">Principles of Object-Oriented Programming</a></li>
-                        <li><a class="dropdown-item" href="timeline.html">Design Patterns</a></li>
+                        <li><a class="dropdown-item" href="pylint.html">Pylint</a></li>
+                        <li><a class="dropdown-item" href="aaa_testing.html">AAA Testing with Python</a></li>
+                        <li><a class="dropdown-item" href="oopsconcepts.html">Principles of Object-Oriented Programming</a></li>
+                        <li><a class="dropdown-item" href="designpatterns.html">Design Patterns</a></li>
                     </ul>
                 </li>
 
@@ -219,6 +251,9 @@
                     classified under various categories such as errors and warnings.
                 </p>
                 <p>The code is given an overall mark, based on the number and severity of the warnings and errors.</p>
+            </div>
+            <div class="grid-right">
+                <img src="images/pylint1.png" alt="mySpace logo" class="grid-img">
             </div>
         </div>
         <div class="page-section">
